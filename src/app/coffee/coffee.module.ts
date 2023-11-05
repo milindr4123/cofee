@@ -6,6 +6,7 @@ import { CoffeeComponent } from './coffee.component';
   imports: [
     CommonModule
   ],
-  declarations: [CoffeeComponent]
+  declarations: [CoffeeComponent],
+  exports: [CoffeeComponent]
 })
 export class CoffeeModule { }
