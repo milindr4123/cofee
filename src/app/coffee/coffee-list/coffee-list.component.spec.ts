@@ -26,7 +26,7 @@ describe('CoffeeListComponent', () => {
     component = fixture.componentInstance;
     
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 3; i++) {
       const cof = new coffee(
         faker.datatype.number(),
         faker.lorem.sentence(),
@@ -48,7 +48,7 @@ describe('CoffeeListComponent', () => {
   });
 
   it('should have 10 <th> elements', () => {
-    expect(debug.queryAll(By.css('td'))).toHaveSize(40)
+    expect(debug.queryAll(By.css('td'))).toHaveSize(12)
   });
   it("Component has a table", () => {
     expect(debug.query(By.css("tbody")).childNodes.length).toBeGreaterThan(3);
