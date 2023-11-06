@@ -1,11 +1,26 @@
-<tr *ngFor="let c of coffee">
-  <td>
-    <dd>{{c.name}}</dd>
-  </td>
-  <td>
-    <dd>{{c.type}}</dd>
-  </td>
-  <td>
-    <dd>{{c.region}}</dd>
-  </td>
-</tr>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Región</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of coffee">
+      <td>
+        <dd style="font-weight: bold">{{c.id}}</dd>
+      </td>
+      <td>
+        <dd>{{c.nombre}}</dd>
+      </td>
+      <td>
+        <dd>{{c.tipo}}</dd>
+      </td>
+      <td>
+        <dd>{{c.region}}</dd>
+      </td>
+    </tr>
+  </tbody>
+</table>

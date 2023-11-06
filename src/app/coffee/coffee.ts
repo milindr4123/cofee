@@ -1,20 +1,20 @@
 export class coffee {
     id: number;
-    name: string;
-    type: string;
+    nombre: string;
+    tipo: string;
     region: string;
-    flavor: string;
-    height: number;
-    image: string;
+    sabor: string;
+    altura: number;
+    imagen: string;
 
     public constructor(id: number, name: string, type: string, region: string, flavor: string,height: number,image: string ) {
         this.id =  id;
-        this.name = name;
-        this.type = type;
+        this.nombre = name;
+        this.tipo = type;
         this.region = region;
-        this.flavor = flavor;
-        this.height = height;
-        this.image = image;
+        this.sabor = flavor;
+        this.altura = height;
+        this.imagen = image;
       }
 
 }
