@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { coffee } from './coffee';
-import { CoffeeService } from './coffee.service';
+import { coffee } from './../coffee';
+import { CoffeeService } from './../coffee.service';
 
 @Component({
-  selector: 'app-coffee',
-  templateUrl: './coffee.component.html',
-  styleUrls: ['./coffee.component.css']
+  selector: 'app-coffee-list',
+  templateUrl: './coffee-list.component.html',
+  styleUrls: ['./coffee-list.component.css']
 })
-export class CoffeeComponent implements OnInit {
+export class CoffeeListComponent implements OnInit {
 
   constructor(private coffeeService: CoffeeService) { }
 
@@ -22,6 +22,4 @@ export class CoffeeComponent implements OnInit {
       this.coffee = coffee;
     });
   }
-
 }
-
