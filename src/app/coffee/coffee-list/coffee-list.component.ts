@@ -12,6 +12,8 @@ export class CoffeeListComponent implements OnInit {
   constructor(private coffeeService: CoffeeService) { }
 
   coffee: Array<coffee> = [];
+  numberOrigen: number = 0;
+  numberBlend: number = 0;
 
   ngOnInit() {
     this.getCoffee();
@@ -20,6 +22,18 @@ export class CoffeeListComponent implements OnInit {
   getCoffee() {
     this.coffeeService.getCoffee().subscribe(coffee => {
       this.coffee = coffee;
+      this.getType();
+    });
+  }
+
+  getType() {
+    this.coffee.forEach(c => {
+      if(c.tipo.includes("Blend")){
+        this.numberBlend++;
+      }
+      else if(c.tipo.includes("Origen")){
+        this.numberOrigen++;
+      }
     });
   }
 }
