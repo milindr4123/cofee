@@ -1,26 +1,39 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Tipo</th>
-      <th scope="col">Región</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let c of coffee">
-      <td>
-        <dd style="font-weight: bold">{{c.id}}</dd>
-      </td>
-      <td>
-        <dd>{{c.nombre}}</dd>
-      </td>
-      <td>
-        <dd>{{c.tipo}}</dd>
-      </td>
-      <td>
-        <dd>{{c.region}}</dd>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="container-fluid p-5">
+  <div class="row">
+    <div class="col-8">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Región</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of coffee">
+            <td>
+              <dd style="font-weight: bold">{{ c.id }}</dd>
+            </td>
+            <td>
+              <dd>{{ c.nombre }}</dd>
+            </td>
+            <td>
+              <dd>{{ c.tipo }}</dd>
+            </td>
+            <td>
+              <dd>{{ c.region }}</dd>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<footer class="bg-light text-center text-lg-start">
+   <!-- Copyright -->
+  <div class="text-center p-3">
+    Contact us: +57 3102105253 - info@elaromamagico.com - elaromamagico
+  </div>
+  <!-- Copyright -->
+</footer>
